@@ -12,7 +12,7 @@
         android:id="@+id/cardview1"
         android:layout_width="match_parent"
         android:layout_height="70dp"
-        app:cardBackgroundColor="#FFFF"
+        app:cardBackgroundColor="#3CF1EBF1"
         app:cardCornerRadius="8dp"
         app:cardElevation="5dp"
         app:cardUseCompatPadding="true">

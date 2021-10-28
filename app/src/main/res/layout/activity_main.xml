@@ -8,6 +8,7 @@
     android:background="@drawable/bg_gradient"
     android:gravity="center"
     android:paddingLeft="20dp"
+    android:id="@+id/mainAct"
     android:paddingRight="20dp"
     android:orientation="vertical"
     >
@@ -15,28 +16,25 @@
 
     <LinearLayout
         android:id="@+id/searcLayout"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
         android:gravity="center"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:layout_marginTop="75dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:startIconDrawable="@drawable/ic_baseline_search_24"
         >
 
-        <EditText
-            android:id="@+id/editMobileNo"
+        <SearchView
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_margin="10dp"
-            android:layout_marginTop="20dp"
-            android:background="#3CF1EBF1"
-            android:ems="10"
-            android:hint="Search City"
-            android:drawableRight="@drawable/ic_baseline_search_24"
-            android:gravity="center" >
-        </EditText>
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="@drawable/custom_search_bg"
+            android:queryHint="Search City"
+            android:onClick="Search"
+            />
+
 
     </LinearLayout>
 
@@ -65,7 +63,9 @@
         android:layout_marginTop="35dp"
         tools:layout_editor_absoluteX="139dp"
         tools:layout_editor_absoluteY="295dp"
-        />
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

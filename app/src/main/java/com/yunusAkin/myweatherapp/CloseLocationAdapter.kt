@@ -1,10 +1,13 @@
 package com.yunusAkin.myweatherapp
 
+
+import android.content.Context
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 
 class CloseLocationAdapter(val closeLocationList: List<CloseLocationModel>) :
     RecyclerView.Adapter<CloseLocationViewHolder>() {
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CloseLocationViewHolder {
         return CloseLocationViewHolder(parent)

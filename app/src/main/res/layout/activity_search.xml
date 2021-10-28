@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity"
+    android:id="@+id/searchAct"
+    android:background="@drawable/bg_gradient"
+    android:padding="20dp">
+    <SearchView
+        android:id="@+id/search_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="Search City"
+        android:iconifiedByDefault="false"
+        android:layout_margin="16dp"
+        android:focusable="true"
+
+        android:background="@drawable/custom_search_bg"/>
+
+
+    <ListView
+        android:id="@+id/Query_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@color/white"
+        android:layout_margin="16dp"
+        />
+
+
+
+
+</LinearLayout >
