@@ -7,9 +7,9 @@
     tools:context=".CityDetailsActivity"
     android:background="@drawable/bg_gradient"
     android:gravity="center"
-    android:paddingLeft="20dp"
+    android:paddingLeft="15dp"
     android:id="@+id/detailsAct"
-    android:paddingRight="20dp"
+    android:paddingRight="15dp"
     android:orientation="vertical"
 
     >
@@ -203,7 +203,7 @@
         android:id="@+id/RecycWeekWeather"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingBottom="5dp"
         tools:layout_editor_absoluteX="95dp"
-        tools:layout_editor_absoluteY="364dp" />
+        tools:layout_editor_absoluteY="364dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"/>
 </androidx.appcompat.widget.LinearLayoutCompat>

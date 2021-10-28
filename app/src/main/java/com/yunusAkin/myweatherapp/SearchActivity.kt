@@ -62,7 +62,7 @@ class SearchActivity : AppCompatActivity(),InternetConnectivityReceiver.Connecti
             intent.putExtra("Woeid",woeID[i].toString())
             intent.putExtra("CityName",CityName[i])
             startActivity(intent)
-            Toast.makeText(this,woeID[i].toString(),Toast.LENGTH_LONG ).show()
+            
 
 
         }

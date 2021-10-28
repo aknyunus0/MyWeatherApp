@@ -33,6 +33,7 @@ class CityDetailsViewHolder (container: ViewGroup) :
     val txtWeatherStateName: TextView = itemView.findViewById(R.id.txtWeatherStateName)
     val txtMaxTemp: TextView = itemView.findViewById(R.id.txtMaxTemp)
     val imgAbbr: ImageView = itemView.findViewById(R.id.imgAbbr)
+    val appDate: TextView=itemView.findViewById(R.id.appDate)
 
 
     @RequiresApi(Build.VERSION_CODES.O)
@@ -44,6 +45,7 @@ class CityDetailsViewHolder (container: ViewGroup) :
         txtMinTemp.text="Min: "+Math.round(weatherCitydDetailsModel.min_temp).toString()+"°C"
         txtWeatherStateName.text=weatherCitydDetailsModel.weather_state_name
         txtMaxTemp.text= "Max: "+Math.round(weatherCitydDetailsModel.max_temp).toString()+"°C"
+        appDate.text=weatherCitydDetailsModel.applicable_date
         var uri: Uri
         uri= Uri.parse(weatherCitydDetailsModel.weather_state_abbr);
         Glide

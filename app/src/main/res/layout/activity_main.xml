@@ -50,6 +50,8 @@
             android:layout_height="wrap_content"
             android:text="Cities close to you"
             android:textSize="30dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             >
 
         </TextView>
